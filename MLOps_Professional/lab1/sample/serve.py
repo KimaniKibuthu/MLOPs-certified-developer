@@ -3,8 +3,8 @@ import logging
 import warnings
 
 from fastapi import FastAPI
-from data_model import MaintenancePayload
-from maintenance import test_maintenance
+from data_model import MaintenancePayload, HelpCall
+from maintenance import test_maintenance, test_hydraulic_pressure
 
 
 app = FastAPI()
@@ -28,8 +28,25 @@ async def ping():
 @app.post("/maintenance")
 async def predict(payload:MaintenancePayload):
     
-    maintenance_result = test_maintenance(payload.temperature)
+    temp_result = test_maintenance(payload.temperature)
+    pressure_result = test_hydraulic_pressure(payload.pressure)
+    if temp_result == 'No Maintenance Required' and pressure_result == 'No Maintenance Required':
+        maintenance_result = 'No Maintenance Required'
+    elif temp_result == 'Needs Maintenance' and pressure_result == 'Needs Maintenance':
+        maintenance_result = 'Needs Maintenance, Temperature and Pressure Sensor'
+    else:
+        if temp_result == 'Needs Maintenance':
+            maintenance_result = 'Needs Maintenance, Temperature Sensor'
+        
+        elif pressure_result == 'Needs Maintenance':
+            maintenance_result = 'Needs Maintenance, Pressure Sensor'
+        
     return {"msg": "Completed Analysis", "Maintenance Status": maintenance_result}
 
+@app.post("/supportbot")
+async def help(helpcall:HelpCall):
+    if helpcall.message.lower() == 'help':
+        return {"msg": "bring the harvester in for maintenance"}
+
 if __name__ == "__main__":
-    uvicorn.run("serve:app", host="0.0.0.0", port=5000, log_level="info")
+    uvicorn.run("serve:app", host="localhost", port=5000, log_level="info", reload=True)
