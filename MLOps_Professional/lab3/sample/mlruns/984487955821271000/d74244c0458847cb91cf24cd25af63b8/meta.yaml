@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Spectra/MLOPs-certified-developer/MLOps_Professional/lab3/sample/mlruns/984487955821271000/d74244c0458847cb91cf24cd25af63b8/artifacts
+end_time: 1709625377595
+entry_point_name: ''
+experiment_id: '984487955821271000'
+lifecycle_stage: active
+run_id: d74244c0458847cb91cf24cd25af63b8
+run_name: redolent-grub-686
+run_uuid: d74244c0458847cb91cf24cd25af63b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709625369181
+status: 3
+tags: []
+user_id: Spectra

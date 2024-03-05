@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Spectra/MLOPs-certified-developer/MLOps_Professional/lab3/sample/mlruns/232375684310626584/200039553ebf477f9c12e5f67cf7d4aa/artifacts
+end_time: 1709624968782
+entry_point_name: ''
+experiment_id: '232375684310626584'
+lifecycle_stage: active
+run_id: 200039553ebf477f9c12e5f67cf7d4aa
+run_name: debonair-donkey-284
+run_uuid: 200039553ebf477f9c12e5f67cf7d4aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709624954470
+status: 3
+tags: []
+user_id: Spectra

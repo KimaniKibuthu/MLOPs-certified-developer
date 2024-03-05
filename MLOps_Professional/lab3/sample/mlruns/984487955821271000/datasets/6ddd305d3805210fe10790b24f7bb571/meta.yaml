@@ -1,0 +1,9 @@
+digest: f3038b99
+name: dataset
+profile: '{"features_shape": [9975, 25], "features_size": 249375, "features_nbytes":
+  997500}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float32\", \"shape\": [-1, 25]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "Spectra", "mlflow.source.name": "serve.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "bd9aa6255254602db39695b61667de4fd98fde67"}}'
+source_type: code

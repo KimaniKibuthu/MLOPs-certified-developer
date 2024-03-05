@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1709625546818
+current_stage: None
+description: ''
+last_updated_timestamp: 1709625546818
+name: xgb_apples_model
+run_id: 200039553ebf477f9c12e5f67cf7d4aa
+run_link: ''
+source: file:///C:/Users/Spectra/MLOPs-certified-developer/MLOps_Professional/lab3/sample/mlruns/232375684310626584/200039553ebf477f9c12e5f67cf7d4aa/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Spectra/MLOPs-certified-developer/MLOps_Professional/lab3/sample/mlruns/232375684310626584/200039553ebf477f9c12e5f67cf7d4aa/artifacts/model
+user_id: null
+version: 1

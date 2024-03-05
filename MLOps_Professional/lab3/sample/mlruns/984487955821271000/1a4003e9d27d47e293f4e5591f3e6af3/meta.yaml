@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Spectra/MLOPs-certified-developer/MLOps_Professional/lab3/sample/mlruns/984487955821271000/1a4003e9d27d47e293f4e5591f3e6af3/artifacts
+end_time: 1709625369144
+entry_point_name: ''
+experiment_id: '984487955821271000'
+lifecycle_stage: active
+run_id: 1a4003e9d27d47e293f4e5591f3e6af3
+run_name: casual-gnu-233
+run_uuid: 1a4003e9d27d47e293f4e5591f3e6af3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709625369042
+status: 3
+tags: []
+user_id: Spectra
