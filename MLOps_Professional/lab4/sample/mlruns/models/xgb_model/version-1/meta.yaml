@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1709628169897
+current_stage: Production
+description: ''
+last_updated_timestamp: 1709628296503
+name: xgb_model
+run_id: 1b27aaa33cca4ec0a9515b3499c18070
+run_link: ''
+source: file:///C:/Users/Spectra/MLOPs-certified-developer/MLOps_Professional/lab4/sample/mlruns/434457811167490220/1b27aaa33cca4ec0a9515b3499c18070/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 1
