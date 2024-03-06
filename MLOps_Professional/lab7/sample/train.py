@@ -57,7 +57,7 @@ class HarvesterMaintenance():
             mlflow.set_experiment(experiment)
             self.active_experiment = experiment
         
-    def process_data(self, file: str, test_size: int = .25):
+    def process_data(self, file: str, test_size: int = .20):
         """processes raw data for training
 
         Parameters

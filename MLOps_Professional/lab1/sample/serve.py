@@ -27,7 +27,15 @@ async def ping():
 
 @app.post("/maintenance")
 async def predict(payload:MaintenancePayload):
-    
+    """
+    Predicts the maintenance status of the harvester based on the temperature and pressure sensor readings
+
+    Args:
+        payload (MaintenancePayload): The payload containing the temperature and pressure sensor readings
+
+    Returns:
+        dict: The maintenance status of the harvester
+    """
     temp_result = test_maintenance(payload.temperature)
     pressure_result = test_hydraulic_pressure(payload.pressure)
     if temp_result == 'No Maintenance Required' and pressure_result == 'No Maintenance Required':
